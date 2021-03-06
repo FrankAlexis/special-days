@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Banner from "./components/banner/Banner";
+import React from "react";
+import data from "./assets/quotes/data.json";
+
+interface Profile {
+  name: string;
+  photo: string;
+  description: string;
 }
+const App = () => (
+  <div className="">
+    <section>
+      <Banner></Banner>
+    </section>
+    <main>
+      <section>
+        {data.map((profile: Profile, index) => (
+          <div key={index}>
+            <h3>{profile.name}</h3>
+            <p>{profile.description}</p>
+          </div>
+        ))}
+      </section>
+    </main>
+  </div>
+);
 
 export default App;
