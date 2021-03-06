@@ -1,10 +1,10 @@
 import "./Banner.scss";
 
-import React, { Fragment } from "react";
+import React from "react";
 
 export default function Banner() {
   return (
-    <Fragment>
+    <div className="container">
       <div className="text-slider-wrapper">
         <div className="text-slider">
           <div className="text-slide">
@@ -15,21 +15,6 @@ export default function Banner() {
           <div className="text-slide">
             <h1>
               The perfect mix of old <br></br> & new.
-            </h1>
-          </div>
-          <div className="text-slide">
-            <h1>
-              A journey over borders <br></br> & generations.
-            </h1>
-          </div>
-          <div className="text-slide">
-            <h1>
-              Your are the <br></br> stylist.
-            </h1>
-          </div>
-          <div className="text-slide">
-            <h1>
-              To be on the <br></br> forerfront.
             </h1>
           </div>
         </div>
@@ -94,6 +79,6 @@ export default function Banner() {
           }}
         ></div>
       </div>
-    </Fragment>
+    </div>
   );
 }

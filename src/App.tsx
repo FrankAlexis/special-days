@@ -1,29 +1,26 @@
 import "./App.scss";
 
 import Banner from "./components/banner/Banner";
+import CardList from "./components/card/CardList";
+import Header from "./components/header/Header";
 import React from "react";
 import data from "./assets/quotes/data.json";
 
-interface Profile {
-  name: string;
-  photo: string;
-  description: string;
-}
 const App = () => (
-  <div className="">
+  <div className="container">
+    <Header></Header>
+    <section>ssdsd{/*<Banner></Banner>*/}</section>
     <section>
-      <Banner></Banner>
+      Feliz día de la mujer, Feliz día de la mujer, Feliz día de la mujer
     </section>
     <main>
       <section>
-        {data.map((profile: Profile, index) => (
-          <div key={index}>
-            <h3>{profile.name}</h3>
-            <p>{profile.description}</p>
-          </div>
-        ))}
+        <CardList data={data}></CardList>
       </section>
     </main>
+    <section>
+      <footer>I'm a footer</footer>
+    </section>
   </div>
 );
 
