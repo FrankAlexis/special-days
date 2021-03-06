@@ -11,20 +11,24 @@ import data from "./assets/quotes/data.json";
 const App = () => (
   <Fragment>
     <div className="container">
-      <Header />
-      <section id="#phasesSection">Banner (Building){/*<Banner />*/}</section>
-      <section>
-        Feliz día de la mujer, Feliz día de la mujer, Feliz día de la mujer
-      </section>
-      <main>
-        <section id="#matesSection">
-          <CardList data={data} />
+      <div className="main-page">
+        <Header />
+        <section id="#phasesSection">
+          <Banner />
         </section>
-      </main>
+        <section>
+          Feliz día de la mujer, Feliz día de la mujer, Feliz día de la mujer
+        </section>
+        <main>
+          <section id="#matesSection">
+            <CardList data={data} />
+          </section>
+        </main>
+      </div>
+      <section>
+        <Footer id="#footerSection" />
+      </section>
     </div>
-    <section id="#footerSection">
-      <Footer />
-    </section>
   </Fragment>
 );
 

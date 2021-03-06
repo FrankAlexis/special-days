@@ -1,4 +1,4 @@
-@import './scss/variables';
+@import "./scss/variables";
 html,
 body {
   margin: 0%;
@@ -7,14 +7,19 @@ body {
   height: 100vh;
   background-color: $primary-color;
 }
-
 main {
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+
+.main-page {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px 1fr 10% 1fr;
+  max-width: $page-max-width;
+  margin: 0 auto;
 }
 .container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 60px 1.5fr 20% 1fr auto;
-  max-width: $page-max-width;
-  margin: 0 auto;
+  grid-template-rows: 95% 5%;
 }

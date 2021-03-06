@@ -1,0 +1,22 @@
+@import './variables';
+
+@mixin breakpoint($media) {
+    @if $media==mobile {
+      @media (max-width: $max-device-width) {
+        @content;
+      }
+    }
+  
+    @else if $media==tablet {
+      @media (min-width: $max-tablet-width) and (max-width: $max-responsive-width) {
+        @content;
+      }
+    }
+  
+    @else if $media==desktop {
+      @media (min-width: $max-responsive-width) {
+        @content;
+      }
+    }
+  }
+  
