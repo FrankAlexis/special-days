@@ -1,27 +1,31 @@
 import "./App.scss";
 
+import React, { Fragment } from "react";
+
 import Banner from "./components/banner/Banner";
 import CardList from "./components/card/CardList";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import React from "react";
 import data from "./assets/quotes/data.json";
 
 const App = () => (
-  <div className="container">
-    <Header></Header>
-    <section>ssdsd{/*<Banner></Banner>*/}</section>
-    <section>
-      Feliz día de la mujer, Feliz día de la mujer, Feliz día de la mujer
-    </section>
-    <main>
+  <Fragment>
+    <div className="container">
+      <Header />
+      <section id="#phasesSection">Banner (Building){/*<Banner />*/}</section>
       <section>
-        <CardList data={data}></CardList>
+        Feliz día de la mujer, Feliz día de la mujer, Feliz día de la mujer
       </section>
-    </main>
-    <section>
-      <footer>I'm a footer</footer>
+      <main>
+        <section id="#matesSection">
+          <CardList data={data} />
+        </section>
+      </main>
+    </div>
+    <section id="#footerSection">
+      <Footer />
     </section>
-  </div>
+  </Fragment>
 );
 
 export default App;
