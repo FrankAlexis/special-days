@@ -1,32 +1,47 @@
-import './Cards.scss'
+import "./Cards.scss";
 
+import React, { Fragment, useState } from "react";
+
+import ModalInfo from "../modal/Modal";
 import { Profile } from "../../models/Profile";
-import React from "react";
 
 const Card = (props: Profile) => {
-  const { name, description, hover, photo } = props;
-
+  const { name, hover, photo, description } = props;
+  const [isOpen, setIsOpen] = useState(false);
   const cardContainer = React.useRef<HTMLDivElement>(null);
 
-cardContainer.current?.addEventListener('mouseover', (e) => {
-  if(cardContainer.current?.classList.contains('card--open')){
-    hover(null)
-  } else {
-    hover('card')
-  }
-})
+  cardContainer.current?.addEventListener("mouseover", (e) => {
+    if (cardContainer.current?.classList.contains("card--open")) {
+      hover(null);
+    } else {
+      hover("card");
+    }
+  });
 
-cardContainer.current?.addEventListener('mouseleave', (e) => {
-  hover(false)
-})
+  cardContainer.current?.addEventListener("mouseleave", (e) => {
+    hover(false);
+  });
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
 
   return (
-    <div ref={cardContainer} className="card"  >
-      <div className="card__content">
-        <img src={photo} alt={name}/>
-      <h3 className="card__title">{name}</h3>
+    <Fragment>
+      <div ref={cardContainer} className="card" onClick={openModal}>
+        <div className="card__content">
+          <img src={photo} alt={name} />
+          <h3 className="card__title">{name}</h3>
+        </div>
       </div>
-    </div>
+      <ModalInfo isOpen={isOpen} setIsOpen={setIsOpen}>
+        <h3 className="card__title">{name}</h3>
+        <div className="modal__image">
+          <img src={photo} alt={name} />
+        </div>
+        <p>{description}</p>
+      </ModalInfo>
+    </Fragment>
   );
 };
 

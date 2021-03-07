@@ -10,6 +10,13 @@
   margin: 0 auto;
 }
 
+.modal {
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .card {
   width: calc(100% / 3 - 1rem);
   padding: 2rem 1rem;
