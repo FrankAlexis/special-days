@@ -1,37 +1,37 @@
 [
-    {
-        "name": "Angelica",
-        "photo": "",
-        "description": "Angel brilla mucho por su carisma y extroversión, tiene un espíritu de 'todos para uno y uno para todos' impresionante a la par que una empatía inigualable, su calidez con los demás hace que estar en un espacio con ella se pueda sentir siempre seguro y siempre chévere. Cabe mencionar que sus TikTok son todo un diamante en bruto; su creatividad, talento y actitud son virtudes espectaculares, ya quisiera tener yo la milésima parte de las cualidades que ella tiene."
-    },
-    {
-        "name": "Estefa",
-        "photo": "",
-        "description": "Estefa es una persona muy divertida y alegre, admiro su gran capacidad para afrontar cualquier reto que se le presenta, además es una excelente compañera que siempre está dispuesta a ayudar <3."
-    },
-    {
-        "name": "Maria Alejandra",
-        "photo": "",
-        "description": "Maria alejandra, sos una mujer que inspira compromiso, si hay algo que resalta en ti, son esas ganas inmesas de hacer las cosas, de seguir aprendiendo y de dar lo mejor con todo ese conocimiento y experiencia que te acompañan en cada palabra. Que seas la cara a los clientes nos llena de orgullo y tranquilidad porque sabemos que con tu esfuerzo al exito se llegará y los obstaculos se caerán"
-    },
-    {
-        "name": "Jennifer",
-        "photo": "",
-        "description": "Jennifer es una chica que irradia ternura y amabilidad; solo con hablar con ella un momento ya lo percibes. Es super animada para aprender y quiere mejorar día a día y eso es algo que admiro demasiado en las personas."
-    },
-    {
-        "name": "Daniela",
-        "photo": "",
-        "description": "Angy es una mujer amable y paciente, con disposición a responder las preguntas tontas como lo evidencie de primera mano por mis preguntas, es responsable con sus deberes y una excelente conversadora, como cuando llegó a entrevistarme con sus preguntas paras las novedades de la semana, espero con ansias que salgamos todos con ella a comer ☺️."
-    },
-    {
-        "name": "Juliana",
-        "photo": "",
-        "description": "Juli es una mujer entregada a lo que lo hace, es divertida, perfeccionista, responsable, es una mujer guerrera que lucha por lo que quiere, sabe qué le gusta y que no, es crítica, pregunta constantemente en pro de entender mejor los problemas para poder aportar mejores soluciones, muy juiciosa y la coge super rápido, es como una esponja. 😁."
-    },
-    {
-        "name": "Laura",
-        "photo": "",
-        "description": "Al principio me parecio que era una chica muy callada e introvertida, pero imagino que era justamente porque aún se estaba acoplando a muchos de los desafios que uno puede abordar a nivel laboral, aún así, en la medida que fuimos sabiendo más de ella y sus intereses, nos fue posible que nos abriera más su persona e ir forjando una bonita amistad con todos. Yo destacaría su pasión por jugar futbol, su intereses continuo por aprender en especial, creó que el ambiente de Exp la ha motivado continuamente a seguir aprendiendo porque siempre está dispuesta a hacerlo y por supuesto a seguir superandose continuamente."
-    }
+  {
+    "name": "Angelica",
+    "photo": "https://s3.amazonaws.com/cdn.experimentality.co/Imagenes/angelica.png",
+    "description": "Angel brilla mucho por su carisma y extroversión, tiene un espíritu de 'todos para uno y uno para todos' impresionante a la par que una empatía inigualable, su calidez con los demás hace que estar en un espacio con ella se pueda sentir siempre seguro y siempre chévere. Cabe mencionar que sus TikTok son todo un diamante en bruto; su creatividad, talento y actitud son virtudes espectaculares, ya quisiera tener yo la milésima parte de las cualidades que ella tiene."
+  },
+  {
+    "name": "Estefa",
+    "photo": "",
+    "description": "Estefa es una persona muy divertida y alegre, admiro su gran capacidad para afrontar cualquier reto que se le presenta, además es una excelente compañera que siempre está dispuesta a ayudar <3."
+  },
+  {
+    "name": "Maria Alejandra",
+    "photo": "",
+    "description": "Maria alejandra, sos una mujer que inspira compromiso, si hay algo que resalta en ti, son esas ganas inmesas de hacer las cosas, de seguir aprendiendo y de dar lo mejor con todo ese conocimiento y experiencia que te acompañan en cada palabra. Que seas la cara a los clientes nos llena de orgullo y tranquilidad porque sabemos que con tu esfuerzo al exito se llegará y los obstaculos se caerán"
+  },
+  {
+    "name": "Jennifer",
+    "photo": "",
+    "description": "Jennifer es una chica que irradia ternura y amabilidad; solo con hablar con ella un momento ya lo percibes. Es super animada para aprender y quiere mejorar día a día y eso es algo que admiro demasiado en las personas."
+  },
+  {
+    "name": "Daniela",
+    "photo": "",
+    "description": "Angy es una mujer amable y paciente, con disposición a responder las preguntas tontas como lo evidencie de primera mano por mis preguntas, es responsable con sus deberes y una excelente conversadora, como cuando llegó a entrevistarme con sus preguntas paras las novedades de la semana, espero con ansias que salgamos todos con ella a comer ☺️."
+  },
+  {
+    "name": "Juliana",
+    "photo": "",
+    "description": "Juli es una mujer entregada a lo que lo hace, es divertida, perfeccionista, responsable, es una mujer guerrera que lucha por lo que quiere, sabe qué le gusta y que no, es crítica, pregunta constantemente en pro de entender mejor los problemas para poder aportar mejores soluciones, muy juiciosa y la coge super rápido, es como una esponja. 😁."
+  },
+  {
+    "name": "Laura",
+    "photo": "",
+    "description": "Al principio me parecio que era una chica muy callada e introvertida, pero imagino que era justamente porque aún se estaba acoplando a muchos de los desafios que uno puede abordar a nivel laboral, aún así, en la medida que fuimos sabiendo más de ella y sus intereses, nos fue posible que nos abriera más su persona e ir forjando una bonita amistad con todos. Yo destacaría su pasión por jugar futbol, su intereses continuo por aprender en especial, creó que el ambiente de Exp la ha motivado continuamente a seguir aprendiendo porque siempre está dispuesta a hacerlo y por supuesto a seguir superandose continuamente."
+  }
 ]

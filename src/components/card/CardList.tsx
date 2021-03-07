@@ -5,13 +5,11 @@ import { Profile } from "../../models/Profile";
 import React from "react";
 
 const CardList = (props: any) => {
-  const { data } = props;
+  const { data, hover } = props;
   return (
     <div className="card-list-container">
       {data.map((profile: Profile, index: number) => (
-        <div className="column">
-          <Card key={index} {...profile}></Card>
-        </div>
+          <Card key={index} {...profile} hover={hover} ></Card>
       ))}
     </div>
   );

@@ -1,28 +1,70 @@
 @import "../../scss/mixins";
+@import "../../scss/variables";
 
-.column {
-  float: left;
-  width: 100%;
-  @include breakpoint(desktop) {
-    width: 30%;
-    margin: 10px;
-  }
+.card-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .card {
-  margin-bottom: 15px;
-  padding: 2px 16px;
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  width: calc(100% / 3 - 1rem);
+  padding: 2rem 1rem;
+  margin: 1rem 0.5rem;
+  border: 2px solid black;
   transition: 0.3s;
   min-height: 280px;
-  min-height: 280px;
-  &:hover {
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+
+  @media all and (max-width: 768px) {
+    width: calc(100% / 2 - 1rem);
   }
+
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  img {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 100%;
+  }
+
   &__title {
     text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
   }
-  @include breakpoint(desktop) { 
+
+  &:hover &__title {
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+
+    color: black;
+  }
+
+  @include breakpoint(desktop) {
     margin-bottom: 0;
   }
 }

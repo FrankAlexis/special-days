@@ -1,2 +1,44 @@
+@import "../../scss/variables";
+
 .banner-container {
+  padding: 0 4rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 15%;
+    height: 100%;
+    background-color: $primary-color;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    z-index: 3;
+    display: block;
+  }
+
+  &__slide {
+    height: 90vh;
+    overflow: hidden;
+    opacity: 0.5;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transform: scale(1);
+      transition: all 0.6s ease-in 0.2s;
+    }
+  }
+
+  .slick-current &__slide {
+    opacity: 1;
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+nav.awssld__bullets {
+  display: none;
 }
