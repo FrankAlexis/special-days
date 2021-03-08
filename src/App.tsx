@@ -4,7 +4,7 @@ import React, { Fragment, useState } from "react";
 
 import Banner from "./components/banner/Banner";
 import CardList from "./components/card/CardList";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import data from "./assets/quotes/data.json";
 
@@ -55,9 +55,9 @@ window.onscroll = function () {
           </section>
         </main>
       </div>
-      {/* <section>
+      <section>
         <Footer id="#footerSection" />
-      </section> */}
+      </section>
     </div>
   </Fragment>
   )

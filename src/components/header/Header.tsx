@@ -18,8 +18,8 @@ const Header = (props: any) => {
        <Logo />
       </div>
       <nav className="header-container__elements">
-        <div className="header-container__elements_option" onMouseOver={() => hover("link")} onMouseOut={() => hover(null)} onClick={() => handlerScroll("#phasesSection")}>FRASES</div>
-        <div className="header-container__elements_option" onMouseOver={() => hover("link")} onMouseOut={() => hover(null)} onClick={() => handlerScroll("#matesSection")}>COMPAÑERAS</div>
+        <div className="header-container__elements_option" onMouseOver={() => hover("link")} onMouseOut={() => hover(null)} onClick={() => handlerScroll("#footerSection")}>GIFT</div>
+        <div className="header-container__elements_option" onMouseOver={() => hover("link")} onMouseOut={() => hover(null)} onClick={() => handlerScroll("#matesSection")}>GIRLS</div>
       </nav>
     </header>
   );

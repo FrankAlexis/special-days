@@ -1,4 +1,150 @@
+@import "../../scss/variables";
+
 .footer-container {
-  background-color: #2e2e2e;
-  height: 200px;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+
+  .gift-card {
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: transform 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33);
+
+    &:hover {
+      transform: rotate(-8deg) scale(1);
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    &__modal {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      display: none;
+
+      &--active {
+        display: initial;
+      }
+
+      &__overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: black;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      .gift-card__content {
+        width: 90%;
+        max-width: 1200px;
+        height: 90%;
+        overflow-y: scroll;
+        background-color: $primary-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &__image {
+          width: 100%;
+          height: 50%;
+          padding: 2rem 2em 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &__text {
+          padding: 0 2rem 1rem;
+          text-align: center;
+
+          a {
+            font-weight: 900;
+            display: block;
+            color: black;
+            padding: 0.5rem;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            width: fit-content;
+            display: inline-block;
+            transition: all 0.4s ease-in;
+            margin-bottom: 1rem;
+
+            &:hover {
+              border-bottom: 1px solid black;
+            }
+          }
+
+          @media all and(max-width: 768px) {
+            padding: 0 1rem;
+          }
+
+          p {
+            font-size: 2rem;
+            padding: 1rem;
+            line-height: 1;
+            margin: 0;
+            @media all and(max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        &__title {
+          font-size: 2rem;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 1;
+          margin: 0;
+
+          @media all and(min-width: 768px) {
+            font-size: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 18%;
+    z-index: 2;
+    @media all and(max-width: 768px) {
+      right: 0.5rem;
+    }
+  }
 }

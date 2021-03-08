@@ -25,9 +25,12 @@ export default function Banner() {
     };
 
     const banners = [
-      {image:'https://images.unsplash.com/photo-1615081423479-1e819ec2853e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80' , text: '"Una mujer debe ser dos cosas: quien ella quiera y lo que ella quiera. Y ustedes eligieron ser unas tesas"'},
-      {image:'https://images.unsplash.com/photo-1611095567319-2f4c389168a9?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80' , text: 'numero 1'},
-      {image:'https://images.unsplash.com/photo-1615081423479-1e819ec2853e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80' , text: 'numero 1'},
+      {image:'https://s3.amazonaws.com/cdn.experimentality.co/Imagenes/banner2.jpeg' , text: '"Una mujer debe ser dos cosas: quien ella quiera y lo que ella quiera. Y ustedes eligieron ser unas tesas"'},
+      {image:'https://s3.amazonaws.com/cdn.experimentality.co/Imagenes/banner1.jpeg' , text: '"Para mi la mujer es una semidiosa capaz de dar vida y enseñar amar"'},
+      {image:'https://s3.amazonaws.com/cdn.experimentality.co/Imagenes/banner3.jpeg' , text: '"Algunas personas temen al fuego, las mujeres tienden a convertirse en él y es su llama la que aviva, empuja y da forma a grandes progresos en la humanidad"'},
+      {image:'https://s3.amazonaws.com/cdn.experimentality.co/Imagenes/banner4.jpeg' , text: '"Ellas siempre un paso por delante, determinantes, audaces e incansables, cuando este juego de la vida solo ha tenido para ellas su modo mas difícil"'},
+      {image:'https://s3.amazonaws.com/cdn.experimentality.co/Imagenes/banner5.jpeg' , text: '"Puede juzgarse el grado de civilización de un pueblo por la posición social de la mujer"'},
+      
     ]
 
   return (
@@ -35,7 +38,6 @@ export default function Banner() {
       <Slider {...settings}>
           {banners && banners.map((banner, index) => (
            <Fragment>
-             
               <div  className="banner-container__slide">
                 <img src={banner.image} alt=""/>
                 <h2>{banner.text}</h2>
