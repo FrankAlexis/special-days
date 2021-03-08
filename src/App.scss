@@ -147,12 +147,22 @@ div.ReactModal__Overlay {
 
 .close-button {
   background-color: transparent;
-  color: black;
+  color: $primary-color;
   border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
   font-size: 2rem;
   padding: 0.5rem;
   cursor: pointer;
+  background-color: black;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  border: 3px solid black;
+
+  @media all and(max-width: 768px) {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 }

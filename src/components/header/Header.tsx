@@ -2,7 +2,7 @@ import "./Header.scss";
 import Logo from '../../assets/images/logo';
 
 const Header = (props: any) => {
-  const {hover, mouseX, mouseY, isHover} = props
+  const {hover} = props
 
   const handlerScroll = (id: string) => {
     const element = document.getElementById(id);

@@ -37,7 +37,7 @@
   }
 
   &__close {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: transparent;
@@ -86,6 +86,7 @@
 
   @media all and(max-width: 768px) {
     padding: 1rem !important;
+    inset: 20px !important;
   }
 }
 
@@ -121,6 +122,7 @@
 
 .modal__image {
   width: 50%;
+  margin-top: 5rem;
 
   @media all and(max-width: 768px) {
     width: 100%;
