@@ -35,11 +35,16 @@ const Card = (props: Profile) => {
         </div>
       </div>
       <ModalInfo isOpen={isOpen} setIsOpen={setIsOpen}>
-        <h3 className="card__title">{name}</h3>
-        <div className="modal__image">
-          <img src={photo} alt={name} />
-        </div>
-        <p>{description}</p>
+       <div className="modal--open">
+          <div className="modal__image">
+            <img src={photo} alt={name} />
+          </div>
+         
+          <div className="modal__info">
+            <h3 className="card__title">{name}</h3>
+            <p>{description}</p>
+          </div>
+       </div>
       </ModalInfo>
     </Fragment>
   );

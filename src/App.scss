@@ -69,21 +69,25 @@ body {
   }
 
   &--link {
-    transform: scale(2);
-    background-color: rgba(254, 174, 174, 0.7);
-    opacity: 1;
+    @media all and (min-width: 768px) {
+      transform: scale(2);
+      background-color: rgba(254, 174, 174, 0.7);
+      opacity: 1;
+    }
   }
 
   &--active {
-    opacity: 1;
-    transform: scale(5);
-
-    &::before {
+    @media all and (min-width: 768px) {
       opacity: 1;
-    }
+      transform: scale(5);
 
-    &::after {
-      opacity: 1;
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 }
@@ -110,6 +114,7 @@ body {
   }
 
   &__happy {
+    transition: all 0.1s;
     span {
       &::after {
         content: "";
@@ -126,10 +131,28 @@ body {
   }
 
   &__woman {
+    transition: all 0.1s;
+
     span {
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: black;
       color: transparent;
     }
   }
+}
+
+div.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.close-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
 }

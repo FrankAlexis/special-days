@@ -6,11 +6,22 @@ import Slider from "react-slick";
 export default function Banner() {
 
   const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1.15,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+      ]
     };
 
     const banners = [

@@ -4,16 +4,81 @@
   padding: 0 4rem;
   position: relative;
 
-  &::before {
-    content: "";
-    width: 15%;
-    height: 100%;
+  @media all and(max-width: 768px) {
+    padding: 0;
+  }
+
+  .slick-arrow {
+    top: 90%;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
     background-color: $primary-color;
-    position: absolute;
-    top: 0;
-    right: 25%;
-    z-index: 3;
-    display: block;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background-color: black;
+
+      &.slick-prev::before,
+      &.slick-next::before {
+        color: $primary-color;
+      }
+    }
+
+    &.slick-next {
+      right: 2rem;
+      z-index: 2;
+    }
+
+    &.slick-prev {
+      left: calc(100% - 11rem);
+      z-index: 2;
+    }
+
+    &.slick-prev::before {
+      content: "<";
+      color: black;
+      font-size: 4rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1.2rem;
+      padding-right: 0.4rem;
+      transition: all 0.3s ease-in;
+    }
+
+    &.slick-next::before {
+      content: ">";
+      color: black;
+      font-size: 4rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1.2rem;
+      padding-left: 0.4rem;
+      transition: all 0.3s ease-in;
+    }
+  }
+
+  &::before {
+    @media all and(min-width: 768px) {
+      content: "";
+      width: 15%;
+      height: 100%;
+      background-color: $primary-color;
+      position: absolute;
+      top: 0;
+      right: 25%;
+      z-index: 3;
+      display: block;
+    }
   }
 
   &__slide {
@@ -27,14 +92,14 @@
       object-fit: cover;
       object-position: center center;
       transform: scale(1);
-      transition: all 0.6s ease-in 0.2s;
+      transition: all 0.7s 0.3s cubic-bezier(0.84, 0, 0.08, 0.99);
     }
   }
 
   .slick-current &__slide {
     opacity: 1;
     img {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 }

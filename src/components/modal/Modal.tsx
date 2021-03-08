@@ -8,7 +8,7 @@ const ModalInfo = (props: any) => {
   };
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal}>
-      <button onClick={closeModal}>Cerrar</button>
+      <button onClick={closeModal} className="close-button">X</button>
       {children}
     </Modal>
   );

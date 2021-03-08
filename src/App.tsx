@@ -55,9 +55,9 @@ window.onscroll = function () {
           </section>
         </main>
       </div>
-      <section>
+      {/* <section>
         <Footer id="#footerSection" />
-      </section>
+      </section> */}
     </div>
   </Fragment>
   )

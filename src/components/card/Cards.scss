@@ -4,10 +4,11 @@
 .card-list-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 2rem;
   max-width: 1440px;
   margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
 .modal {
@@ -73,5 +74,59 @@
 
   @include breakpoint(desktop) {
     margin-bottom: 0;
+  }
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+  background-color: $primary-color !important;
+  display: flex;
+  align-items: center;
+  padding: 5rem !important;
+  border: 3px solid black !important;
+
+  @media all and(max-width: 768px) {
+    padding: 1rem !important;
+  }
+}
+
+.ReactModal__Overlay {
+  z-index: 3;
+}
+
+.modal__info {
+  width: 50%;
+  padding: 2rem;
+  @media all and(max-width: 768px) {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .card__title {
+    font-size: 6rem;
+    color: black;
+    -webkit-text-stroke: none;
+
+    @media all and(max-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.modal--open {
+  display: flex;
+
+  @media all and(max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.modal__image {
+  width: 50%;
+
+  @media all and(max-width: 768px) {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
