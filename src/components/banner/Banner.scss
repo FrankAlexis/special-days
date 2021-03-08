@@ -8,6 +8,28 @@
     padding: 0;
   }
 
+  &__slide {
+    position: relative;
+    h2 {
+      position: absolute;
+      color: white;
+      bottom: 2rem;
+      left: 50%;
+      z-index: 2;
+      font-size: 2.5rem;
+      transform: translateX(-50%);
+      width: 500;
+      line-height: 1;
+
+      @media all and(max-width: 768px) {
+        width: 100%;
+        padding: 1rem;
+        font-size: 2rem;
+        bottom: 4rem;
+      }
+    }
+  }
+
   .slick-arrow {
     top: 90%;
     border: 2px solid black;
